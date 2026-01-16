@@ -59,3 +59,4 @@ export default BlogList
 
 // line-clampのインストール
 // npm install -D @tailwindcss/line-clamp
+// 
