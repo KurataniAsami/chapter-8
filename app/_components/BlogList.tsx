@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Post } from '../types/Post'
+import { Post } from '../_types/Post'
 
 const BlogList = () => {
   const [posts, setPosts] = useState<Post[]>([])
