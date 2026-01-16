@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import TopMenu from "@/components/TopMenu";
-import SideMenu from "@/components/SideMenu";
-
+import Header from "@/app/_components/Header";
 
 export default function RootLayout({
   children,
@@ -11,14 +9,10 @@ export default function RootLayout({
   }) {
   return (
     <html lang="ja">
-        <main className="flex flex-row">
-        
-        <SideMenu />
-        <section className="pl-[300px] max-lg:pl-[146px] max-md:pl-0 w-full min-h-screen overflow-hidden">
-          <TopMenu />
+      <body>
+        <Header />
           {children}
-        </section>
-        </main>
+      </body>
     </html>
   );
 }
